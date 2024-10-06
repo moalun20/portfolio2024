@@ -59,18 +59,17 @@ h3{
 /*Navigation*/
 /*Header*/
 .header{
-    display:flex;
-    flex-direction:column; 
-    justify-content: center;
-    align-content: center;
-    padding: 0.5rem;
-    position: sticky;
-    border-bottom: 0.5px solid #cccccc;
-    background-color: #256358;
-    position: sticky;
-    top: 0;
-    width:100%;
-    z-index:999;
+    display: flex;                      /* Gör headern till en flex-container */
+    flex-direction: row;               /* Placerar logotypen och menyn i rad */
+    justify-content: space-between;     /* Skapar utrymme mellan logotypen och menyn */
+    align-items: center;                /* Vertikal centrering av alla element i headern */
+    padding: 0.5rem;                   /* Padding runt headern */
+    position: sticky;                  /* Gör headern fast vid toppen */
+    border-bottom: 0.5px solid #cccccc; /* En linje under headern */
+    background-color: #256358;         /* Bakgrundsfärg för headern */
+    top: 0;                            /* Positionera vid toppen av sidan */
+    width: 100%;                       /* Full bredd */
+    z-index: 999;    
 }
 .header a, .footer a{
     color: #fefefe;
@@ -78,6 +77,15 @@ h3{
 }
 .header p, .footer p{
     color:#fefefe;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fefefe;
 }
 .logo{
 display:flex;
@@ -93,10 +101,19 @@ justify-content:center;
     text-decoration: none;
 }
 .menu{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    justify-content:center;
+    display: none; /* Stäng menyn som standard */
+    flex-direction: column; /* Gör att menyn visas vertikalt */
+    position: absolute; /* Gör att menyn kan placeras relativt till nav */
+    top: 80%; /* Placera menyn precis under nav-elementet */
+    left: 0; /* Justera så att den börjar från vänster */
+    background-color: #256358; /* Samma bakgrundsfärg som header för att dölja eventuella överlappningar */
+    width: 100%; /* Gör menyn lika bred som nav */
+    z-index: 998; /* Se till att menyn ligger ovanpå andra element */
+}
+
+.menu.active {
+    display: flex; /* Visa menyn när active-klassen är på */
+    flex-direction: column; /* Justera menyn för mobilvisning */
 }
 /*Navigational links*/
 .nav-link {
@@ -215,7 +232,6 @@ th {
         opacity: 1;
     }
 }
-
 .hero {
     animation: fadeIn 2s ease-in-out; /* Applicerar en fade-in animation på hero-sektionen */
 }
@@ -280,6 +296,9 @@ img{
     bottom: 0;
     width: 4px;
     background-color: #256358;
+}
+.timeline button{
+    float:right;
 }
 
 .event {
@@ -374,7 +393,6 @@ img{
     flex-direction:column;
     align-content: center;
     background: rgba(242, 242, 242);
-    background: radial-gradient(circle, rgba(242, 242, 242, 0.9), rgba(210, 210, 210,1));
 }
 .contact-content{
     display: flex;
@@ -408,15 +426,6 @@ input[type="text"], input[type="email"] {
     }
 }
 @media (min-width:800px){
-    .header{
-        display:flex;
-        flex-direction:row;
-        justify-content:space-between;
-        top:0;
-    }
-    .menu{
-        flex-direction:row;
-    }
     .footer{
         flex-direction: row;
     }
@@ -463,6 +472,50 @@ input[type="text"], input[type="email"] {
     }
 }
 @media (min-width:1200px){
+    .header{
+        display:flex;
+        flex-direction:row; 
+        justify-content: space-between;
+        align-content: center;
+        padding: 0.5rem;
+        position: sticky;
+        border-bottom: 0.5px solid #cccccc;
+        background-color: #256358;
+        position: sticky;
+        top: 0;
+        width:100%;
+        z-index:999;
+    }
+    .hamburger{
+        display:none;
+    }
+    .header a, .footer a{
+        color: #fefefe;
+        text-decoration: none;
+    }
+    .header p, .footer p{
+        color:#fefefe;
+    }
+    .logo{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    }
+    .logo img{
+        height:48px;
+        width:240px;
+    }
+    .logo a{
+        margin: 1rem;
+        text-decoration: none;
+    }
+    .menu{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+        position: relative;
+    }
     .hero-content{
         display:flex;
         flex-direction:row;

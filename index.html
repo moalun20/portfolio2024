@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/stylesheet.css">
+    <script src="script.js" defer></script>
     <title>Moa's Portfolio</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -17,17 +18,23 @@
         <div class="logo">
             <a href="index.html"> <img src="resources/logomoa.png" alt="Logotype Moa Lundgren"/> </a>
         </div>
-        <nav class="nav">
+        <div class="nav">
         <!--Menu links-->
             <ul class="menu">
-                <li class="nav-link"><a href="#about">Read more about me</a></li>
+                <li class="nav-link"><a href="#about">About</a></li>
                 <li class="nav-link"><a href="#projects">Projects</a></li>
                 <li class="nav-link"><a href="resources/moaresume.pdf" target="_blank">Resume</a></li>
                 <li class="nav-link"><a href="#contact">Contact</a></li>
                 <li class="nav-link"><a href="https://www.linkedin.com/in/moaluundgren/">Linkedin</a></li>
                 
             </ul>
-        </nav>
+        </div>
+        <!--Hamburgermenu for smaller screens-->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
     <main>
     <section class="hero-banner">
@@ -66,13 +73,13 @@
                 <p>In my personal life, I enjoy exploring new ideas, engaging in creative pursuits, and collaborating with others. I'm always eager to learn and grow, whether through professional development opportunities or new hobbies. I spend a lot of my sparetime painting, while listening to some of my favourite music.</p>
                 </article>
                 <p>Feel free to explore my portfolio to see some of my work. If you have any questions or would like to discuss a project, I'd love to connect!</p>
-                <h3> My journey so far</h3>
+                <h3> My Work experience so far</h3>
                 <div class="two-column">
                     <div class="timeline">
                         <div class="event">
                             <div class="dot"></div>
                             <div class="event-details">
-                                <h3>2024 UX & UI designer NIBE AB</h3>
+                                <h3>2023 UX & UI designer NIBE AB</h3>
                                 <p> Currently working as a UX & UI designer at NIBE AB</p>
                             </div>
                         </div>
@@ -97,7 +104,20 @@
                                 <p> Gratuated from University of Halmstad with a major in informatics</p>
                             </div>
                         </div>
+                        <div class="event">
+                            <div class="dot"></div>
+                            <div class="event-details">
+                                <h3>2018-2023 Other jobs</h3>
+                                <ul>
+                                    <li>2022-2023 K-rauta - Worked as a shop assistant during my university studies</li>
+                                    <li> 2018-2020 Mark municipality - Permanent employment as a subsitute teacher</li>
+                                    <li> 2017-2018 Coop - Worked as a shop assistant during my highschool studies</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="resources/moaresume.pdf" target="_blank"><button class="button-small"> See educational background</button></a>
                     </div>
+                    <div class="skillsandtools">
                     <div class="skills">
                         <h3> Skills</h3>
                         <ul>
@@ -112,7 +132,25 @@
                             <li> Requirements analysis</li>
                         </ul>
                     </div>
+                    <div class="skills">
+                        <h3>Tools</h3>
+                        <ul>
+                        <li> Figma</li>
+                        <li>Sketch</li>
+                        <li>Miro</li>
+                        <li>Hotjar</li>
+                        <li>Microsoft Clarity</li>
+                        <li>Google analytics</li>
+                        <li>Censhare</li>
+                        <li>CMS</li>
+                        <li>Azure DevOps</li>
+                        <li>Jira</li>
+                        <li>Confluence</li>
+                        <li>Illustrator</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
         </div>
         </div>
     </section>
@@ -153,7 +191,7 @@
         <div class="contact-content">
             <div class="contact-promotext">
                 <h2> Get in touch!</h2>
-                <p>I'd love to hear from you! Whether you have questions about my work or want to discuss a potential project, please fill out the form below, and I’ll get back to you as soon as possible.
+                <p>I'd love to hear from you! Whether you have questions about my work or want to discuss a potential project, please fill out the form, and I'll get back to you as soon as possible.
 
                 </p>
             </div>
@@ -181,9 +219,6 @@
         <div class="copyright">
             <p>&copy; Moa Lundgen 2024</p>
         </div>
-        <div class="privacypolicy-termsofuse">
-            <a>Privacy policy & terms of use</a>
-        </div>
         <div class="quick-links">
             <ul>
                 <li class="nav-link"><a href="#about">About</a></li>
@@ -195,8 +230,7 @@
         <div class="sm-links">
             <ul>
                 <li> <a href="https://www.linkedin.com/in/moaluundgren/"><img class= "icon" src="resources/icons8.linkedin.png" alt="icon with link to linkedin"/> </a></li>
-                <li> <a href="https://github.com/moalun20/lab1Portfolio.git"><img class= "icon" src="resources/icons8.github.png" alt="icon with link to github"/> </a></li>
-                <li> <a href="https://www.instagram.com/moaluundgren/"><img class= "icon" src="resources/icons8.instagram.png" alt="icon with link to instagram"/> </a></li>
+                <li> <a href="mailto: moaluundgren@hotmail.com"><img class="icon" src="resources/icons8-mail-50.png"></a></li>
             </ul>
         </div>
     </footer>
