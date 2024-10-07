@@ -425,6 +425,15 @@ input[type="text"], input[type="email"] {
     h1 {
         color: #fefefe; 
     }
+    h2{
+        color: #fefefe;
+    }
+    h3 {
+        color: #fefefe;
+    }
+    p {
+        color: #fefefe;
+    }
 }
 @media (min-width:800px){
     .footer{
