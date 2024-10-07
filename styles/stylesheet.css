@@ -159,6 +159,10 @@ justify-content:center;
     padding: 1rem;
     bottom: 0;
 }
+.footer ul{
+    padding:0;
+    text-align:center;
+}
   /*Components*/
   .button-small {
     padding: 1rem 2rem;
