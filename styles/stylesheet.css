@@ -437,6 +437,9 @@ input[type="text"], input[type="email"] {
     .hero{
         background-color: #1a1b1b;
     }
+    .contact-content{
+        background-color: #1a1b1b;
+    }
 }
 @media (min-width:800px){
     .footer{
