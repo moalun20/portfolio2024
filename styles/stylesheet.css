@@ -434,6 +434,9 @@ input[type="text"], input[type="email"] {
     p {
         color: #fefefe;
     }
+    .hero{
+        background-color: #1a1b1b;
+    }
 }
 @media (min-width:800px){
     .footer{
