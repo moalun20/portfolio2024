@@ -202,6 +202,7 @@ th {
     color: #1a1b1b;                    
     text-align: center; 
     border-bottom:1px solid #f2f2f2;     
+    margin-top: 4rem;
 }
 .hero-content {
     display: flex;
