@@ -485,9 +485,9 @@ input[type="text"], input[type="email"] {
     }
     .contact-content{
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         justify-content:space-around;
-        align-items: flex-start; 
+        align-items: center; 
     }
     .contact-promotext{
         width:50%;
